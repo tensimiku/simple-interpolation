@@ -42,7 +42,7 @@ class Interpolation:
             dtable = []
             for x in range(i, self.plen):
                 yval = rtable[i-2]
-                ydiff = (yval[x-i+1] - yval[x-i]) / (self.points[i].x - self.points[0].x)
+                ydiff = (yval[x-i+1] - yval[x-i]) / (self.points[x].x - self.points[x-i].x)
                 dtable.append(ydiff)
             rtable.append(dtable)
         for val in rtable:
