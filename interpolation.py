@@ -147,7 +147,7 @@ class Interpolation:
         return ab[0]*x + ab[1]
 
 if __name__ == "__main__":
-    tuples = [(0,2.5), (1, 0.5), (2, 1.5), (2.5, 1.5), (3, 1.5), (3.5, 1.25), (4, 0)]
+    tuples = [(0,2.5), (1, 0.5), (2, 0.5), (2.5, 1.5), (3, 1.5), (3.5, 1.25), (4, 0)]
     dataset = [Point(tuples[_i][0], tuples[_i][1]) for _i in range(0,len(tuples))]
     tet = Interpolation(dataset)
     varx = 1.5
